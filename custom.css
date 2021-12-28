@@ -13,7 +13,7 @@ html[data-theme="dark"] {
   --ls-tertiary-background-color: #282e34;
   --ls-quaternary-background-color: rgba(246, 246, 246, 0.04);
   --ls-table-tr-even-background-color: rgba(246, 246, 246, 0.05);
-  --ls-active-primary-color: #8ec2c2;7
+  --ls-active-primary-color: #8ec2c2;
   --ls-active-secondary-color: #eeffff;
   --ls-page-properties-background-color: var(--ls-secondary-background-color);
   --ls-block-properties-background-color: var(--ls-secondary-background-color);
@@ -252,59 +252,15 @@ mark .page-reference .bracket {
 
 /* === Checkbox === */
 .form-checkbox {
-  background-color: var(--ls-primary-background-color);
-}
-.dark-theme .form-checkbox {
-  border: 1px solid rgba(246, 246, 246, 0.5);
-}
-.white-theme .form-checkbox {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
-.dark-theme .form-checkbox:checked {
-  border-color: rgba(246, 246, 246, 0.5);
-  background-color: var(--ls-primary-background-color);
-}
-
-.white-theme .form-checkbox:checked {
-  border-color: rgba(0, 0, 0, 0.5);
-  background-color: var(--ls-link-text-color);
-}
-
-.dark-theme .form-checkbox:focus {
-  border-color: rgba(246, 246, 246, 0.5);
-}
-
-.dark-theme .form-checkbox:checked:focus {
-  background-color: inherit;
-  border-color: rgba(246, 246, 246, 0.5);
-}
-
-.form-checkbox:hover {
-  transform: scale(1.2);
-}
-
-/* === Marker for Task Status === */
-.marker-switch {
-  font-size: 0.75rem;
-  margin-right: 6px;
-  margin-left: 2px;
-  border-radius: 0;
-  font-weight: 500;
-  display: inline-block;
-  text-align: center;
-  height: 16px;
-  opacity: 1;
-  padding: 0.1rem 0.25rem 0.1rem 0.25rem;
-  border: 1px solid;
-  line-height: 1;
-  cursor: pointer;
-}
-.dark-theme .marker-switch {
-  color: rgba(246, 246, 246, 0.5);
-}
-.white-theme .marker-switch {
-  color: rgba(0, 0, 0, 0.5);
+.block-marker {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 0px; 
+  padding-right: 4px; 
+  margin: 0px; 
 }
 
 /* === Filters === */
